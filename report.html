@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Phishing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">Phishing Page</a>
+        <a href="info.html">Info</a>
+        <a href="report.html">Report Phishing</a>
+    </nav>
+
+    <h1>Report a Phishing Attempt</h1>
+
+    <p>If you received a suspicious email or message, use this form to report it so it can be reviewed.</p>
+
+    <form method="post" action="https://miswebapps.uncw.edu/mis310/form-submit.aspx">
+
+        <p>
+            <label for="name">Your Name</label><br>
+            <input type="text" id="name" name="name" required>
+        </p>
+        
+        <p>
+            <label for="email">Your Email</label><br>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+            <label for="sender">Suspicious Sender Address</label><br>
+            <input type="text" id="sender" name="sender">
+        </p>
+
+        <p>
+            <label for="date">Date You Received It</label><br>
+            <input type="date" id="date" name="date">
+        </p>
+
+        <fieldset>
+            <legend>How did it reach you?</legend>
+            <label><input type="radio" name="method" value="email"> Email</label><br>
+            <label><input type="radio" name="method" value="text"> Text message</label><br>
+            <label><input type="radio" name="method" value="other"> Other</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What made it suspicious? (Check all that apply)</legend>
+            <label><input type="checkbox" name="signs" value="urgency"> Sense of urgency or threats</label><br>
+            <label><input type="checkbox" name="signs" value="link"> Suspicious link</label><br>
+            <label><input type="checkbox" name="signs" value="sender"> Old sender address</label><br>
+            <label><input type="checkbox" name="signs" value="attachment"> Unexpected attachment</label>
+        </fieldset>
+
+        <p>
+            <label for="details">Additional Details</label><br>
+            <textarea id="details" name="details" rows="4" cols="40"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Submit Report">
+        </p>
+    </form>
+
+    <p>Go back to the <a href="index.html">project home page</a>.</p>
+</body>
+</html>
